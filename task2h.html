@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 Music Player</title>
+    <link rel="stylesheet" href="task2cs.css">
+</head>
+<body>
+    <header>
+        <h1 class="glowing-text">🎼 Music Player 🎼</h1>
+    </header>
+    <div class="container">
+        <div class="player">
+            <h2 id="song-title">Song Title</h2>
+            <img id="cover" src="cover1.jpg" alt="Album Cover">
+            <audio id="audio"></audio>
+            <p id="artist">Artist Name</p>
+            
+            <input type="range" id="seek-bar" value="0">
+            <div class="time">
+                <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+            </div>
+            
+            <div class="controls">
+                <button id="prev">⏮</button>
+                <button id="play">▶</button>
+                <button id="next">⏭</button>
+            </div>
+
+            <div class="extra-controls">
+                <button id="shuffle">🔀</button>
+                <button id="loop">🔁</button>
+                <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+    </div>
+    <script src="task2js.js"></script>
+</body>
+</html>

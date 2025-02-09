@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Image Gallery</title>
+    <link rel="stylesheet" href="task3cs.css">
+</head>
+<body>
+    <h1>🐾 Amazing Animal Gallery 🦜</h1>
+
+    <div class="gallery">
+        <img src="dog.jpg" alt="Dog" onclick="openLightbox(this)">
+        <img src="cat.jpg" alt="Cat" onclick="openLightbox(this)">
+        <img src="bird.jpg" alt="Bird" onclick="openLightbox(this)">
+        <img src="lion.jpg" alt="Lion" onclick="openLightbox(this)">
+        <img src="bird2.jpg" alt="Bird" onclick="openLightbox(this)">
+        <img src="tiger.jpg" alt="Tiger" onclick="openLightbox(this)">
+        <img src="elephant.jpg" alt="Elephant" onclick="openLightbox(this)">
+        <img src="bird3.jpg" alt="Bird" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="task3js.js"></script>
+</body>
+</html>
